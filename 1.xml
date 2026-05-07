@@ -91,7 +91,7 @@ window.addEventListener('touchstart',  focusGame);
 async function assembleDataBlob() {
   const parts = [];
   for (let i = 0; i < DATA_PARTS; i++) {
-    loadingText.textContent = `G+ Unblocked Sites!... (${i + 1}/${DATA_PARTS})`;
+    loadingText.textContent = `Classroom Central Unblocked Sites!... (${i + 1}/${DATA_PARTS})`;
     const r = await fetch(`${CDN}/${DATA_FILE}.part${i}`);
     if (!r.ok) throw new Error(`Part ${i} aaa: ${r.status}`);
     parts.push(new Uint8Array(await r.arrayBuffer()));
